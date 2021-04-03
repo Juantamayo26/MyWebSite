@@ -1,0 +1,30 @@
+@url = http://localhost:5000
+
+###
+GET {{url}}/blog
+
+###
+GET {{url}}/blog/HOLA3
+
+###
+POST {{url}}/blog
+Content-Type: application/json
+
+{
+    "prefix": "HOLA3",
+    "title": "MI PRIMER BLOG",
+    "description": "QUE MAS"
+}
+
+###
+DELETE {{url}}/blog/HOLA3
+
+###
+PUT {{url}}/blog/hola3
+Content-Type: application/json
+
+{
+    "prefix": "HOLA3",
+    "title": "MI PRIMER este",
+    "description": "QUE MAS"
+}
